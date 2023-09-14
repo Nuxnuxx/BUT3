@@ -1,0 +1,3 @@
+[submodule "qualitedev/TP_Gestion_de_Librairie/QualityDevIUT"]
+	path = qualitedev/TP_Gestion_de_Librairie/QualityDevIUT
+	url = git@github.com:Nuxnuxx/QualityDevIUT.git
