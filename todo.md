@@ -23,3 +23,5 @@ s'interesser a la compta de lentreprise
 image optimization v2
 js for general + every specific page
 refacto structure du css
+pop up phone not working
+backend for form and newsletter
