@@ -48,33 +48,27 @@ create_task() {
     echo $JSON_PAYLOAD
 }
 
-# Thomas's tasks
-create_task "Initialisation Projet Git" "Mise en place du repo Git avec une stratégie de branching adaptée. Références : [Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)" "2024-01-02" "2024-01-03" "Thomas"
-create_task "Design de la Base de Données" "Élaboration du schéma de la DB. Références: [Conception MongoDB](https://www.mongodb.com/basics)" "2024-01-04" "2024-01-06" "Thomas"
-create_task "Initialisation du Backend" "Configuration de l'environnement Node.js et intégration de MongoDB." "2024-01-09" "2024-01-13" "Thomas"
-create_task "API CRUD" "Développement des routes CRUD pour les principales entités." "2024-01-16" "2024-01-23" "Thomas"
-create_task "Optimisation du Backend" "Revue du code, refactoring et optimisations diverses." "2024-01-24" "2024-01-30" "Thomas"
-create_task "Mise en Production du Backend" "Déploiement du backend et configuration des variables d'environnement." "2024-01-31" "2024-02-05" "Thomas"
+# Tâches pour Thomas (Backend Developer)
+create_task "Initialisation du Projet Git" "Mise en place du repo Git avec une stratégie de branching. Références: [Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)" "2024-01-02" "2024-01-02" "Thomas"
+create_task "Installation de Node et Express" "Mise en place de Node.js et Express. Références: [Express.js](https://expressjs.com/fr/starter/installing.html)" "2024-01-03" "2024-01-04" "Thomas"
+create_task "Design de la Base de Données MongoDB" "Conception du schéma de la DB. Références: [MongoDB Data Modeling](https://docs.mongodb.com/manual/core/data-modeling-introduction/)" "2024-01-07" "2024-01-10" "Thomas"
+create_task "API CRUD pour MongoDB" "Création des routes CRUD pour les entités principales. Références: [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/)" "2024-01-13" "2024-01-16" "Thomas"
+create_task "Sécurisation de l'API" "Mise en place d'une authentification et d'une sécurisation des données. Références: [Passport.js](http://www.passportjs.org/)" "2024-01-17" "2024-01-18" "Thomas"
+create_task "Optimisation de l'API" "Optimisation des requêtes et de la logique métier pour une meilleure performance." "2024-01-21" "2024-01-23" "Thomas"
 
-# Tom's tasks
-create_task "Configuration React" "Initialisation de l'appli React avec routing via React-Router. Références : [React Routing](https://reactrouter.com/)" "2024-01-04" "2024-01-05" "Tom"
-create_task "Wireframing & Design" "Création des maquettes initiales de l'application." "2024-01-06" "2024-01-10" "Tom"
-create_task "Développement Components React" "Création des components nécessaires pour les principales fonctionnalités." "2024-01-11" "2024-01-17" "Tom"
-create_task "Intégration API" "Connecter le frontend avec l'API développée par Thomas." "2024-01-18" "2024-01-26" "Tom"
-create_task "Tests et Refinements UI" "Tests UI et apport des ajustements nécessaires." "2024-01-27" "2024-02-02" "Tom"
-create_task "Mise en Production du Frontend" "Déploiement du frontend sur une plateforme d'hébergement." "2024-02-03" "2024-02-07" "Tom"
+# Tâches pour Tom (Frontend Developer)
+create_task "Installation de React" "Mise en place du projet React. Références: [Create React App](https://fr.reactjs.org/docs/create-a-new-react-app.html)" "2024-01-03" "2024-01-04" "Tom"
+create_task "Wireframing et Design des Composants" "Création des maquettes et design des principaux composants. Références: [React Components](https://fr.reactjs.org/docs/components-and-props.html)" "2024-01-07" "2024-01-10" "Tom"
+create_task "Intégration API avec Axios" "Connexion du frontend avec le backend. Références: [Axios](https://axios-http.com/docs/intro)" "2024-01-13" "2024-01-14" "Tom"
+create_task "Routage avec React-Router" "Mise en place du routage. Références: [React Router](https://reactrouter.com/)" "2024-01-15" "2024-01-16" "Tom"
+create_task "Authentification et Session" "Gestion des sessions utilisateur et authentification. Références: [React Authentication](https://www.smashingmagazine.com/2020/01/authentication-react-apps/)" "2024-01-17" "2024-01-18" "Tom"
+create_task "Optimisation des Performances Frontend" "Utilisation d'outils comme React Profiler pour optimiser les rendus." "2024-01-21" "2024-01-23" "Tom"
 
-# Kevin's tasks
-create_task "Stratégie de Test" "Définition des méthodologies de test et rédaction du plan de test. Références: [Plan de Test Agile](https://www.softwaretestinghelp.com/agile-test-plan-template/)" "2024-01-04" "2024-01-06" "Kevin"
-create_task "Tests Unitaires Backend" "Écriture et exécution de tests pour les routes CRUD." "2024-01-09" "2024-01-14" "Kevin"
-create_task "Tests d'Intégration" "Tests pour vérifier l'intégration correcte entre le frontend et le backend." "2024-01-15" "2024-01-22" "Kevin"
-create_task "Tests UI/UX" "S'assurer que l'interface est intuitive et que le design est cohérent." "2024-01-23" "2024-01-29" "Kevin"
-create_task "Revue des Tests et Ajustements" "Revue des tests, identification des problèmes et coordination avec Tom et Thomas pour les résoudre." "2024-01-30" "2024-02-04" "Kevin"
-create_task "Préparation pour la Mise en Production" "S'assurer que tout est prêt pour le déploiement, tant pour le frontend que pour le backend." "2024-02-05" "2024-02-08" "Kevin"
+# Tâches pour Kevin (DevOps et Testeur)
+create_task "Stratégie de Test" "Définition des méthodologies de test pour assurer la qualité. Références: [Software Testing Strategies](https://www.guru99.com/software-testing-strategies.html)" "2024-01-03" "2024-01-03" "Kevin"
+create_task "Tests Unitaires Backend avec Jest" "Écriture de tests pour les routes CRUD. Références: [Jest](https://jestjs.io/)" "2024-01-17" "2024-01-19" "Kevin"
+create_task "Tests Frontend avec React Testing Library" "Écriture de tests pour les composants React. Références: [React Testing Library](https://testing-library.com/)" "2024-01-20" "2024-01-22" "Kevin"
+create_task "Mise en Place de la CI/CD" "Automatisation de l'intégration et du déploiement. Références: [Jenkins CI/CD](https://jenkins.io/doc/)" "2024-01-23" "2024-01-25" "Kevin"
+create_task "Déploiement sur le Serveur" "Mise en production sur le serveur. Références: [DigitalOcean Deployment](https://www.digitalocean.com/community/tutorials)" "2024-01-28" "2024-01-30" "Kevin"
+create_task "Maintenance et Monitoring" "Mise en place d'outils pour monitorer la performance et la stabilité du système." "2024-01-31" "2024-02-02" "Kevin"
 
-# Réunions d'équipe hebdomadaires pour la coordination et le feedback
-create_task "Réunion d'équipe 1" "Discussion sur les avancées de la première semaine et planification de la semaine suivante." "2024-01-06" "2024-01-06" "Équipe"
-create_task "Réunion d'équipe 2" "Discussion sur les avancées de la deuxième semaine et planification de la semaine suivante." "2024-01-13" "2024-01-13" "Équipe"
-create_task "Réunion d'équipe 3" "Discussion sur les avancées de la troisième semaine et planification de la semaine suivante." "2024-01-20" "2024-01-20" "Équipe"
-create_task "Réunion d'équipe 4" "Discussion sur les avancées de la quatrième semaine et planification de la semaine suivante." "2024-01-27" "2024-01-27" "Équipe"
-create_task "Réunion d'équipe 5" "Discussion sur les avancées de la cinquième semaine et préparation pour la mise en production." "2024-02-03" "2024-02-03" "Équipe"
