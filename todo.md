@@ -1,7 +1,7 @@
 - finir td lucet DONE
-finir td tony mare
-faire affiche horen
+- faire affiche horen DONE
 faire asana et prepaper orale de pecro
+finir td tony mare
 
 ## soft skill
 train le java et le c# et le python
@@ -25,3 +25,4 @@ js for general + every specific page
 refacto structure du css
 pop up phone not working
 backend for form and newsletter
+fix : contact pop up
