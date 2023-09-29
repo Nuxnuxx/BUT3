@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  webserver:
+    build: .
+    ports:
+      - 9000:80
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+      - .logs/:/var/log/nginx
