@@ -24,12 +24,6 @@ public class TestPasBo {
         TimeUnit.SECONDS.sleep(3);
 
         //t1.mettreFin()
-        premierMonThread.mettreFin();
-
-        TimeUnit.SECONDS.sleep(5);
-
-        secondMonThread.mettreFin();
-
         System.out.println("Fin de TestSecondeFacon :" + Thread.currentThread().getName());
     }
 }

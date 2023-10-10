@@ -30,9 +30,6 @@ public class MonThread implements Runnable {
                     // car on agit plus sur l'ecran (l'objet system out) apres cette ligne la
                 }
             }
-    }
-
-    public void mettreFin() {
-        this.termine = false;
+        }
     }
 }
