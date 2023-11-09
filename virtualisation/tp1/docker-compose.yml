@@ -6,6 +6,9 @@ services:
     restart: always
     ports:
       - 8080:8080
+    networks:
+      - tp1
+      - tp1_bis
   bdd:
     image: mariadb:10.6-focal
     restart: always
@@ -13,3 +16,26 @@ services:
       - MARIADB_ROOT_PASSWORD=lol
     volumes:
       - ./bdd:/var/lib/mysql
+    networks:
+      - tp1
+      - tp1_bis
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - 8081:80
+    networks:
+      - tp1
+  frontend2:
+    build: ./frontend2
+    restart: always
+    ports:
+      - 8082:80
+    networks:
+      - tp1_bis
+
+networks:
+  tp1:
+    driver: bridge
+  tp1_bis:
+    driver: bridge

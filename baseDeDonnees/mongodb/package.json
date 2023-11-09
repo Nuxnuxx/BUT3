@@ -1,0 +1,14 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+	"type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.2.0"
+  }
+}

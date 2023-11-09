@@ -1,0 +1,7 @@
+instance,score_totalP1,P_totalP1,score_totalP2,P_totalP2,score_totalS1,P_totalS1,score_totalS2,P_totalS2,Wmax
+inst4obj.txt,9,14,7,14,9,14,7,14,15
+inst5obj.txt,11,17,10,13,11,17,8,17,18
+inst10obj.txt,18,28,27,29,23,25,19,29,29
+inst20obj.txt,26,42,36,41,34,38,29,42,42
+inst35obj.txt,38,100,111,100,112,99,54,100,100
+inst100obj.txt,9,45,40,45,84,45,18,45,45
