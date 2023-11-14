@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   backend:
@@ -9,6 +9,9 @@ services:
     networks:
       - tp1
       - tp1_bis
+    cpus: 0.1
+    mem_limit: 100m
+    mem_reservation: 50m
   bdd:
     image: mariadb:10.6-focal
     restart: always
