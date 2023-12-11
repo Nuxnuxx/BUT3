@@ -1,1 +1,0 @@
-<div>Recipe Card</div>
