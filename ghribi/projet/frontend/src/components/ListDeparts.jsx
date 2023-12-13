@@ -14,7 +14,8 @@ function ListDeparts() {
             <li key={departement.code}>
               {departement.nom} : {departement.code}
               <Link to={`/departements/${departement.code}`}>EDITER</Link>
-              <Form method="POST" action="destroy">
+              <Form method="POST">
+                <input hidden name="feat" value="delete" />
                 <input hidden name="code" value={departement.code} />
                 <button>Supprimer</button>
               </Form>

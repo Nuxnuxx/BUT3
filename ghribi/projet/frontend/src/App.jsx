@@ -4,7 +4,6 @@ import Apropos from "./components/Apropos";
 import ListDeparts from "./components/ListDeparts";
 import {
   action,
-  deleteAction,
   loader,
   updateAction,
   updateLoader,

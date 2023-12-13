@@ -14,7 +14,14 @@ export async function loader() {
 
 export async function action({ request }) {
   const formData = await request.formData();
-  const departement = await createDepartement(formData.get("nom"));
+  let departement;
+  if (formData.get("feat") == "create") {
+    departement = await createDepartement(formData.get("nom"));
+  }
+  if (formData.get("feat") == "delete") {
+    departement = await deleteDepartement(formData.get("code"));
+  }
+	console.log(departement)
   return { departement };
 }
 
@@ -26,11 +33,5 @@ export async function updateAction({ request, params }) {
 
 export async function updateLoader({ params }) {
   const departement = await getDepartementById(params.id);
-  return { departement };
-}
-
-export async function deleteAction({ request }) {
-  const formData = await request.formData();
-  const departement = await deleteDepartement(formData.get("nom"));
   return { departement };
 }
