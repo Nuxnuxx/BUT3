@@ -1,0 +1,42 @@
+
+version: "3"
+
+services:
+  backend:
+    build: ./backend/
+    ports:
+      - 8080:8080
+    deploy:
+      replicas: 3
+  bdd:
+    image: mariadb:10.6-focal
+    restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=lol
+    volumes:
+      - bdd:/var/lib/mysql
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.role == manager
+  frontend1:
+    build: ./frontend/
+    restart: always
+    ports:
+      - 8081:80
+    deploy:
+      replicas: 3
+  frontend2:
+    build: ./frontend2/
+    restart: always
+    ports:
+      - 8082:80
+    deploy:
+      replicas: 3
+
+volumes:
+  bdd:
+    driver: local
