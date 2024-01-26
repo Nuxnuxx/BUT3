@@ -1,0 +1,90 @@
+  #####                                              #######                  #######                      
+ #     #   ##   #####  ##### #    # #####  ######       #    #    # ######    #       #        ##    ####  
+ #        #  #  #    #   #   #    # #    # #            #    #    # #         #       #       #  #  #    # 
+ #       #    # #    #   #   #    # #    # #####        #    ###### #####     #####   #      #    # #      
+ #       ###### #####    #   #    # #####  #            #    #    # #         #       #      ###### #  ### 
+ #     # #    # #        #   #    # #   #  #            #    #    # #         #       #      #    # #    # 
+  #####  #    # #        #    ####  #    # ######       #    #    # ######    #       ###### #    #  ####  
+                                                                                                           
+
+
+Vous avez 5 drapeaux à récupérer dans 5 épreuves indépendantes.
+
+Votre nom et Prénom : Gaetan Littiere
+Votre Parcours : A
+
+..:: Stage 1 ::..
+
+Vous devez utiliser l'image ctf:stage1 disponible sur ce repository https://hub.docker.com/repository/docker/renaudperrai/ctf/general
+Cette image n'expose aucun port.
+
+Flag : Le prof il est trop fort
+
+..:: Stage 2 ::..
+
+Vous devez utiliser l'image ctf:stage2 disponible sur ce repository https://hub.docker.com/repository/docker/renaudperrai/ctf/general
+Cette image expose le port 80, une fois mise en route, suivez les instructions de la page HTML.
+
+Flag : le fichier
+
+/!\ Le fichier à récupérer est à mettre dans Moodle
+
+..:: Stage 3 ::..
+
+Vous allez devoir réaliser le déploiement d'un site Wordpress et d'une base de données au sein de la même application.
+Pour ce faire, vous allez cloner le GIT dans un répertoire local : https://github.com/RenaudPERRAI/IUT_ctf_stage3.git
+
+Pour vous aider dans le déploiement, le hub Docker dispose d'une image officielle Wordpress.
+
+Concernant la base de données :
+Moteur : Mysql 8.0
+Database : wordpress
+User : wordpress
+Password : lol
+
+Flag 1 : A ENTRER ICI
+Flag 2 : A ENTRER ICI
+
+/!\ Si vous avez des erreurs dans la base de données, cloner à nouveau le GIT ou faites un > git reset --hard
+
+..:: Stage 4 ::..
+
+Dans un Swarm Docker, vous allez devoir commencer par utiliser une image de visualisation de conteneur.
+Pour ce faire, vous devez déployer une seule instance de l'image https://hub.docker.com/r/dockersamples/visualizer.
+/!\ Ce service doit apparaître dans la liste des services en cours d'utilisation.
+
+Toujours dans le même swarm, vous devez déployer un service avec 5 instances en utilisant l'image ctf:stage4 du repository https://hub.docker.com/repository/docker/renaudperrai/ctf/general
+Cette image expose le port 3000.
+
+Flag : Le swarm c'est chaud avec un s devant
+
+Dans Moodle, vous déposerez aussi une copie d'écran de l'outil de visualisation avec toutes les tâches en fonctionnement.
+
+Quand vous aurez terminé, supprimez le service que vous venez de déployer avant de passer à la suite.
+
+..:: Stage 5 ::..
+
+Dans le même Swarm que précédemment vous allez déployer un stack pour une application Drupal avec une base de données PostGres.
+Pour que tout fonctionne correctement, je vais vous imposer quelques restrictions sur l'architecture du stack :
+	* La base de données sera hébergée sur le manager avec 1 seule tâche
+	* Drupal aura 5 tâches réparties sur le manager et worker de façon aléatoire par Docker
+
+Drupal est à déployer depuis l'image ctf:stage5 du repository https://hub.docker.com/repository/docker/renaudperrai/ctf/general
+Il est entièrement configuré et prêt à l'emploi.
+La base de donnée est une image postgres:16 officielle
+
+Concernant la base de données, vous devez récupérer les tables et la structure depuis ce git : https://github.com/RenaudPERRAI/IUT_ctf_stage5.git
+Pour la persistance des données, je vous laisse chercher dans la documentation officielle (ce n'est pas trop compliqué).
+Il faut juste savoir que les données sont stockées dans un répertoire "bdd/pgdata"
+Le mot de passe de la base de données : drupalPass
+Il n'y a pas besoin d'utilisateur
+
+Pour vous connecter à Drupal, voici les éléments.
+User Drupal : drupalForEver
+Mdp Drupal : WordpressOuDrupal
+
+Vous devez vous connecter à Drupal et dans Contenu vous trouverez le flag 5.
+
+Flag : bonne annee ! vous etes pret a valider votre semestre ! Bravo, c'etait un plaisir.
+
+Dans Moodle, vous déposerez aussi une copie d'écran de l'outil de visualisation avec toutes les tâches en fonctionnement.
